@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>jQuery Demo: Creating A Sliding Image Puzzle</title>
+	
+	<script type="text/javascript" src="js/jquery-latest.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.puzzle.js"></script>
+	<script type="text/javascript">
+		
+		// When the document is ready, hook up the puzzle
+		// functionality to the targeted DIVs.
+		$(
+			function(){
+				$( "div.puzzle, p" ).puzzle( 100 );			
+			}		
+			);
+	
+	</script>
+</head>
+<body>
+
+	<h1>
+		jQuery Demo: Creating A Sliding Image Puzzle
+	</h1>
+	
+	<p>
+		Below, we are going to create a sliding image puzzle
+		using a DIV that contains a given image.
+	</p>
+
+	
+	<div 
+		class="puzzle"
+		style="float: left ; margin-right: 50px ;">
+	
+		<img 
+			src="src/puzzle_nbu1.jpg" 
+			width="333" 
+			height="500" 
+			alt="Puzzle Nbu One"
+			/>
+			
+	</div>
+	
+	
+	<div 
+		class="puzzle"
+		style="float: left ;">
+	
+		<img 
+			src="src/puzzle_nbu2.jpg" 
+			width="333" 
+			height="500" 
+			alt="Puzzle Nbu Two"
+			/>
+			
+	</div>
+
+
+	<div
+		style= "float: right ;">
+		<img src="src/puzzle_nbu2.jpg"
+			width="300" 
+			height="500" 
+			alt="Puzzle Nbu Two"
+		/>
+
+	</div>
+
+
+	<div
+		style="float: right ;">
+		<img 
+			src="src/puzzle_nbu1.jpg" 
+			width="300" 
+			height="500" 
+			alt="Puzzle Nbu One"
+			/>
+
+	</div>
+
+
+
+</body>
+</html>
